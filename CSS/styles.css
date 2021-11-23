@@ -1,0 +1,172 @@
+/* Акцентный брендовый цвет */
+:root {
+    --brand-color: #2196F3;
+    --text: #757575;
+    --title: #212121;
+    --bg-color: #ffffff;
+    --secondary-bg-color:#F5F4FA;
+    --third-bg-color: #2F303A;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    /* Основной цвет текста */
+    color:var(--text);
+    font-size: 14px;
+    line-height: 24px;
+    /* Основной цвет фона #ffffff */
+    background-color:var(--bg-color);
+    }
+
+
+/* Отмена стилей по умолчанию */
+a {text-decoration:none;}
+ul {list-style:none;}
+.list {list-style:none;}
+
+.blue {color:var(--brand-color);}
+
+/* Вторичный цвет фона #2F303A */
+.black-background {background-color:var(--third-bg-color);}
+
+/* Для ровности цифр в строке */
+*{font-variant-numeric:lining-nums;}
+
+/* Придание выделению определенного цвета */
+*::selection{background-color: var(--brand-color);}
+
+
+/* Стили для навигации */
+.site-nav{
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+}
+
+.site-nav a{color:var(--title);}
+.site-nav a:hover,
+.site-nav a:focus
+{color:var(--brand-color);}
+
+/* Текущая (а потому активная) ссылка в навигации */
+.site-nav .link.current {
+    color:var(--brand-color);
+}
+
+/* Цвета ссылок в футере сайта */
+.white-color {color:var(--bg-color);}
+
+
+/* Цвет части логотипа */
+.black-color {color:#000000;}
+
+/* Вторичный цвет фона #2F303A */
+.black-background {background-color:#2F303A;}
+
+/* Кнопка */
+.button {
+    color:var(--title);
+    background-color:var(--bg-color);
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.button.primary {
+    color: var(--title);
+    background-color:var(--secondary-bg-color);
+}
+
+.button.secondary {
+    color: var(--bg-color);
+    background-color:var(--brand-color);
+}
+
+.button.secondary:hover,
+.button.secondary:focus {
+    background-color:#188CE8;
+}
+
+/* .text-shadow {
+    color: #ffffff;
+    text-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
+} */
+
+/* основной цвет заголовков */
+.title {color:var(--title);}
+
+.text-hero{
+    color:#ffffff;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 60px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.logo{
+    font-family: Raleway;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 31px;  
+}
+
+.advantage h3 {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+    }
+
+.team h2 {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+}
+
+.team h3 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+}
+
+.team p{
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+}
+
+.address {
+    color: #ffffff;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.address a{    
+    color:rgba(255, 255, 255, 0.6);
+}
+
+.nav-portfolio {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+}
+
+.portfolio-card h2{
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 36px;
+}
+
+.portfolio-card p{
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 30px;
+}
