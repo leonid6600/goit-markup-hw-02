@@ -34,15 +34,16 @@ ul {list-style:none;}
 
 /* Придание выделению определенного цвета */
 *::selection {
-    color: #ffffff;
-    background-color:var(--brand-color);}
+color: #ffffff;
+background-color:var(--brand-color);
+}
 
 
 /* Стили для навигации */
 .header-nav a{
-font-weight: 500;
-font-size: 14px;
-color:var(--title);
+    font-weight: 500;
+    font-size: 14px;
+    color:var(--title);
 }
 
 .header-nav a:hover,
@@ -50,16 +51,21 @@ color:var(--title);
     color:var(--brand-color);
 }
 
+/* Текущая (а потому активная) ссылка в навигации */
+.header-nav .link-current {
+    color:var(--brand-color);
+}
+
 /* стили для связи в хедере */
 .header-connection a{
-font-weight: 500;
-font-size: 14px;
-color:var(--text);
+    font-weight: 500;
+    font-size: 14px;
+    color:var(--text);
 }
     
 .header-connection a:hover,
 .header-connection a:focus
-{color:var(--brand-color);
+    {color:var(--brand-color);
 }
 
 /* стиль для адреса */
@@ -76,17 +82,10 @@ color:var(--text);
 
 .footer-connection a:hover,
 .footer-connection a:focus
-{color:var(--brand-color);
+    {color:var(--brand-color);
 }
 
-
-
-/* Текущая (а потому активная) ссылка в навигации */
-.header-nav .link-current {
-    color:var(--brand-color);
-}
-
-/* Цвета ссылок в футере сайта */
+/* Цвета части лого в футере */
 .white-color {color:var(--bg-color);}
 
 
@@ -103,7 +102,6 @@ color:var(--text);
     font-weight: 700;
     font-size: 16px;
     cursor: pointer;
-
 }
 
 .button.primary {
