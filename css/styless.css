@@ -23,7 +23,6 @@ body {
 /* Отмена стилей по умолчанию */
 a {text-decoration:none;}
 ul {list-style:none;}
-.list {list-style:none;}
 
 .blue {color:var(--brand-color);}
 
@@ -40,18 +39,50 @@ ul {list-style:none;}
 
 
 /* Стили для навигации */
-.site-nav{
+.header-nav a{
 font-weight: 500;
 font-size: 14px;
+color:var(--title);
 }
 
-.site-nav a{color:var(--title);}
-.site-nav a:hover,
-.site-nav a:focus
-{color:var(--brand-color);}
+.header-nav a:hover,
+.header-nav a:focus{
+    color:var(--brand-color);
+}
+
+/* стили для связи в хедере */
+.header-connection a{
+font-weight: 500;
+font-size: 14px;
+color:var(--text);
+}
+    
+.header-connection a:hover,
+.header-connection a:focus
+{color:var(--brand-color);
+}
+
+/* стиль для адреса */
+.address {
+    color:var(--bg-color);
+    font-size: 14px;
+}
+
+/* стили для связи в футоре */
+.footer-connection a{    
+    color:rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+}
+
+.footer-connection a:hover,
+.footer-connection a:focus
+{color:var(--brand-color);
+}
+
+
 
 /* Текущая (а потому активная) ссылка в навигации */
-.site-nav .link.current {
+.header-nav .link-current {
     color:var(--brand-color);
 }
 
@@ -98,10 +129,6 @@ font-size: 14px;
     background-color:#188CE8;
 }
 
-/* .text-shadow {
-    color: #ffffff;
-    text-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
-} */
 
 /* основной цвет заголовков */
 .title {color:var(--title);}
@@ -145,16 +172,6 @@ font-size: 14px;
 .team p{
     font-size: 16px;
     text-align: center;
-}
-
-.address {
-    color: #ffffff;
-    font-size: 14px;
-    font-style: normal;
-}
-
-.address a{    
-    color:rgba(255, 255, 255, 0.6);
 }
 
 .nav-portfolio {
