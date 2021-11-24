@@ -13,7 +13,8 @@ body {
     /* Основной цвет текста */
     color:var(--text);
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.5;
+    text-transform: capitalize;
     /* Основной цвет фона #ffffff */
     background-color:var(--bg-color);
     }
@@ -33,15 +34,15 @@ ul {list-style:none;}
 *{font-variant-numeric:lining-nums;}
 
 /* Придание выделению определенного цвета */
-*::selection{background-color: var(--brand-color);}
+*::selection {
+    color: #ffffff;
+    background-color:var(--brand-color);}
 
 
 /* Стили для навигации */
 .site-nav{
-font-style: 400;
 font-weight: 500;
 font-size: 14px;
-line-height: 16px;
 }
 
 .site-nav a{color:var(--title);}
@@ -70,17 +71,26 @@ line-height: 16px;
     background-color:var(--bg-color);
     font-weight: 700;
     font-size: 16px;
-    line-height: 30px;
+    cursor: pointer;
+
 }
 
 .button.primary {
     color: var(--title);
     background-color:var(--secondary-bg-color);
+    font-family: inherit;
+}
+
+.button.primary:hover,
+.button.primary:focus {
+    color: var(--bg-color);
+    background-color:var(--brand-color);
 }
 
 .button.secondary {
     color: var(--bg-color);
     background-color:var(--brand-color);
+    font-family: inherit;
 }
 
 .button.secondary:hover,
@@ -100,7 +110,6 @@ line-height: 16px;
     color:#ffffff;
     font-weight: 900;
     font-size: 44px;
-    line-height: 60px;
     text-transform: uppercase;
     text-align: center;
 }
@@ -109,42 +118,39 @@ line-height: 16px;
     font-family: Raleway;
     font-weight: 700;
     font-size: 26px;
-    line-height: 31px;  
 }
 
 .advantage h3 {
     font-weight: 700;
     font-size: 14px;
-    line-height: 16px;
     text-transform: uppercase;
-    }
+}
+
+.team {
+    background-color: var(--secondary-bg-color);
+}
 
 .team h2 {
-    font-weight: bold;
+    font-weight: 700;
     font-size: 36px;
-    line-height: 42px;
     text-align: center;
 }
 
 .team h3 {
     font-weight: 500;
     font-size: 16px;
-    line-height: 19px;
     text-align: center;
 }
 
 .team p{
-    font-weight: 400;
     font-size: 16px;
-    line-height: 19px;
     text-align: center;
 }
 
 .address {
     color: #ffffff;
-    font-weight: 400;
     font-size: 14px;
-    line-height: 24px;
+    font-style: normal;
 }
 
 .address a{    
@@ -154,18 +160,18 @@ line-height: 16px;
 .nav-portfolio {
     font-weight: 500;
     font-size: 16px;
-    line-height: 26px;
     text-align: center;
 }
 
 .portfolio-card h2{
     font-weight: 700;
     font-size: 18px;
-    line-height: 36px;
 }
 
 .portfolio-card p{
-    font-weight: 400l;
     font-size: 16px;
-    line-height: 30px;
 }
+
+
+
+
