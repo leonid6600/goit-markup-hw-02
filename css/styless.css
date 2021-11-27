@@ -18,7 +18,7 @@ body {
     letter-spacing: 0.03em;
     /* Основной цвет фона #ffffff */
     background-color:var(--bg-color);
-    }
+}
 
 
 /* Отмена стилей по умолчанию */
